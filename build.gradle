@@ -13,8 +13,11 @@ repositories {
     mavenCentral()
 }
 
+
 buildscript {
-    
+    repositories {
+        mavenCentral()
+    }
     dependencies {
         classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.8.1"
     }
