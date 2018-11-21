@@ -1,3 +1,4 @@
+
 # ToggleProc
 Make your toggles manageable with this library.
 
@@ -13,10 +14,14 @@ Features:
 # Getting started
 Add the dependency
 ```
+repositories {
+     mavenCentral()
+}
+
 dependencies {
   //...
-  compile files('com.abnarmo.nl:toggleproc:1.1')
-  annotationProcessor files('com.abnarmo.nl:toggleproc:1.1')
+  compile('com.abnamro:toggleproc:1.1')
+  annotationProcessor('com.abnamro:toggleproc:1.1')
   //...
 }
 ```
@@ -105,4 +110,5 @@ FeatureToggleManager manager = new FeatureToggleManager(new Config);
 boolean isTest1Enabled = manager.getToggles().isTest1();
 ...
 ```
+Demo: https://github.com/BakhtarSobat/aac/tree/toggleProcDemo
 
