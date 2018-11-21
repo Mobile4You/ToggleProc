@@ -9,7 +9,7 @@ sourceCompatibility = 1.7
 
 buildscript {
 
-    repositories{''
+    repositories{
         jcenter()
     }
     dependencies {
