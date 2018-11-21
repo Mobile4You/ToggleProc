@@ -1,0 +1,20 @@
+apply from: './buildSystem/version.gradle'
+
+task repoVersion() {
+    doLast {
+        print "[repo-version: ${artifactVersion}]"
+    }
+}
+
+allprojects {
+
+    project.version = artifactVersion
+
+    group 'br.com.m4u.toggleproc'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
