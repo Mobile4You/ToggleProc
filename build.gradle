@@ -1,7 +1,5 @@
 apply from: "https://raw.githubusercontent.com/Mobile4You/MobileScripts/master/buildSystem/cieloLioJavaLibrary.gradle"
-
-group 'br.com.m4u.toggleproc'
-version '1.1'
+apply from: "./buildSystem/defaultConfig.gradle"
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -9,13 +7,9 @@ apply plugin: 'signing'
 
 sourceCompatibility = 1.7
 
-repositories {
-    mavenCentral()
-}
-
-
 buildscript {
-    repositories {
+
+    repositories{
         jcenter()
     }
     dependencies {
