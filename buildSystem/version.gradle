@@ -1,0 +1,14 @@
+ext {
+
+    versionMajor = 1
+    versionMinor = 1
+    versionPatch = 0
+
+    application = [
+            versionName: "${versionMajor}.${versionMinor}.${versionPatch}",
+            versionCode: versionMajor * 1_000_000 + versionMinor * 10_000 + versionPatch * 100
+    ]
+
+    artifactVersion = application.versionName
+
+}
